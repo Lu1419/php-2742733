@@ -1,4 +1,4 @@
 <?php
 
-echo 'Ejecutando condicionales...';
+echo 'Ejecutando condicionales 2...';
 ?>
