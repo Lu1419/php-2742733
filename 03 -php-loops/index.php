@@ -7,3 +7,11 @@ while ($i < 10):
 endwhile;
 ?>  
 
+<?php  
+for ($x = 4; $x <= 10; $x++) {
+  if ($x == 3) continue;
+  echo "Number: $x <br>";
+}
+?>  
+
+
