@@ -1,8 +1,8 @@
 <?php
 
-    //superglobal GEY y POST
-    $userName = $_GET['username'];
-    $userEmail = $_GET['usermail'];
+    //superglobal GET y POST
+    $userName = $_POST['username'];
+    $userEmail = $_POST['usermail'];
 
     echo $userName;
     echo '<br>';
