@@ -9,7 +9,7 @@
 <body>
     
     <h1>Verifique su edad</h1>
-        <form action="ejercicio.01.php" method= "GET">
+        <form action="ejercicio.01.php" method= "get">
         <label for="edad">Ingrese su edad</label>
         <input type="number" id="edad" name="edad" required>
         <button type="submit">Verificar</button>
@@ -17,7 +17,7 @@
 
 
 </body>
-</html>
+
 
 <?php
 
@@ -35,3 +35,5 @@ else if ($edad < 18){
 
 
 ?>
+
+</html>
