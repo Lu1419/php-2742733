@@ -13,7 +13,7 @@
             echo 'Rellene completo el formulario';
         } else {
         echo $usuario .' - ' . $password;
-        if ($usuario == $user_register['userRegister'] && $password == $user_register['password']) {
+        if ($usuario == $user_register['userRegister'] && $password == $pass_register['passRegister']) {
 
             echo ' - Listo, sesión iniciada 🤫';
             header ('location: user.php');
@@ -48,7 +48,7 @@
     </form>
     <br>
 
-    <a href="./resgistro.php">Registrate</a>
+    <a href="./registro.php">Registrate</a>
 
 </body>
 
