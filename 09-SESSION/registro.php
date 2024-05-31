@@ -6,27 +6,31 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $password = $_POST['password'];
     $correo = $_POST['correo'];
 
-    //verificación de los datos variacion / llenos
+    //Para verificar que se envíen todos los datos
     if (empty($usuario) or empty($password) or empty ($correo)) {
         echo 'Rellene completo el formulario';
     } else {
 
     //echo $usuario .' - ' . $password;
-    $_SESSION['userRegister'] = $usuario;
+    /*$_SESSION['userRegister'] = $usuario;
     $_SESSION['passRegister'] = $password;
-    $_SESSION['correoRegister'] = $correo;
-    echo ' - variables de sesión guardadas 🥵';
+    $_SESSION['correoRegister'] = $correo; */
+    //echo ' - variables de sesión guardadas 🥵';
 
     //header('location: index.php');
     
     try {
         $conexion = new PDO("mysql: host=localhost; dbname=focaapp", 'root', '');
+        echo "Conexión OK";
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
 
-$statement = $conexion->prepare("INSERT INTO `userapp` (`ID`, Username`, `Correo`, `Contraseña`) VALUES (NULL, :usuario, :correo, :pass)");
+    //Vamos a preparar una sentencia SQL y la guardamos en una variable
 
+$statement = $conexion->prepare("INSERT INTO `userapp` (`ID`, `username`, `password`, `correo`) VALUES (NULL, :user, :correo, :pass) ");
+
+//ejecutar el statement
 $statement->execute( Array(":usuario"=>$usuario, ":correo" => $correo, ":pass" => $password));
 }
 }
@@ -39,6 +43,7 @@ $statement->execute( Array(":usuario"=>$usuario, ":correo" => $correo, ":pass" =
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
