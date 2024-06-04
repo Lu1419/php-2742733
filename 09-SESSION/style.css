@@ -1,7 +1,7 @@
 
 body{
-    background-color: black;
-    height: 38rem;
+    background-image: url(./fondo.jpg);
+    height: 10rem;
 }
 
 .contenedor_grande{
@@ -12,10 +12,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkred;
+    background-color:rgba(135, 207, 235, 0.699);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     color: white;
+}
+
+.contenedor{
+
+    height: 25rem;
 }
 
 .linea{
@@ -43,6 +48,37 @@ body{
 
     display: flex;
     justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.registro{
 
+    margin-bottom: 10rem;
+
+}
+ .boton1{
+
+    display: flex;
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    
+ }
+
+.boton{
+
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: darkgray;
+    font-size: 0.9rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+ .registro{
+
+    display: flex;
+    justify-content: center;
+    color:antiquewhite;
+}

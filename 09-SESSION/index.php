@@ -69,20 +69,19 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             <div>
                 <form action="index.php" method="post">
                 <div class="user"><label for="user">User</label></div>
-                <input class="linea" id="user" type="text" placeholder="User" name="user">
+                <input class="linea" id="user" type="text" name="user">
             </div>
             <br>
             <br>
             <div class="pass"><label for="password">Password</label></div>
-            <input class="linea" id="password" type="password" placeholder="Password" name="password">
+            <input class="linea" id="password" type="password" name="password">
             <br>
             <br>
-            <button class="boton" type="submit">Iniciar sesión</button>
+            <div class="boton1">
+            <button class="boton" type="submit">Iniciar sesión</button></div>
             </form>
             <br>
-
-            <a class="registro" href="./registro.php">Registrate</a>
-        </div>
+            <div class="registro"><a class="registro" href="./registro.php">Registrate</a></div>
     </div>
 
 </body>
