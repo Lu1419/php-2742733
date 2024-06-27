@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3a170; /* Color tierra cálido */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #b35900; /* Color cálido para el texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    width: 70%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: left;
+    background-color: #f5f5dc; /* Color tierra claro */
+}
+
+th, td {
+    padding: 12px;
+    border: 3px solid #5c4033; /* Color tierra oscuro */
+}
+
+th {
+    background-color: #d9884a; /* Color cálido */
+    color: #4d2600; /* Color tierra oscuro */
+}
+
+tr:nth-child(even) {
+    background-color: #f2e6d9; /* Color tierra muy claro */
+}
+
+tr:hover {
+    background-color: #e6ccb2; /* Color tierra cálido */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f5f5dc; /* Color tierra claro */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px solid #b35900; /* Color cálido */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #b35900; /* Color cálido */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #cc9966; /* Color tierra cálido */
+    border-radius: 4px;
+}

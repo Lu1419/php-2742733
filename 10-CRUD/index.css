@@ -1,0 +1,38 @@
+body{
+    background-image: url(./fondoli.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.829);
+    border: none;
+    border-radius: 2rem;
+    position: relative; 
+    top: 14rem;
+    right: 1rem;
+    width: 12rem !important;
+    margin-left: 30rem !important;
+    
+    
+}
+
+.boton a{
+    color: white;
+    text-decoration: none;
+    font-family: 2rem;
+}
+
+.bienvenido{
+
+    position: relative;
+    top: 15rem;
+    font-size: 5rem;
+    right: 1.5rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
